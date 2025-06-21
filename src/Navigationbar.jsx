@@ -25,7 +25,7 @@ const NavigationBar = () => {
             fontFamily: 'Orbitron , sans-serif'
           }
         }
-        >St Peters Academy</div>
+        >KATETHYA MILLERS</div>
 
         {/* Menu Toggle for Mobile */}
         <div className="flex md:hidden">
