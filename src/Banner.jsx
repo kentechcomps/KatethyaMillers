@@ -32,17 +32,17 @@ const Banner = () => {
           </svg>
           <div className="flex flex-col">
             <a href="tel:+1234567890" className="text-lg font-medium hover:underline">
-              +123-456-7890
+              0718060754
             </a>
             <a href="tel:+0987654321" className="text-lg font-medium hover:underline">
-              +098-765-4321
+              0700699101
             </a>
           </div>
         </div>
 
         {/* Apply Now Button */}
         <button className="bg-purple-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-purple-700 transition">
-          Apply Now
+          Talk to us
         </button>
       </div>
     </div>
