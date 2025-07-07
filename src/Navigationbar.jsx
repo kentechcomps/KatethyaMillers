@@ -19,12 +19,8 @@ const NavigationBar = () => {
         className="flex flex-wrap items-center justify-between p-3 "
         style={{ backgroundColor: 'white' }}
       >
-        <div className="text-xl text-purple-600 font-medium"
-        style={
-          {
-            fontFamily: 'Orbitron , sans-serif'
-          }
-        }
+        <div className="text-xl text-[#1B4332] font-medium"
+      
         >KATETHYA MILLERS</div>
 
         {/* Menu Toggle for Mobile */}
@@ -49,10 +45,8 @@ const NavigationBar = () => {
 
         {/* Links */}
         <div className={`toggle w-full md:w-auto md:flex text-right text-bold ${isOpen ? 'block' : 'hidden'} md:block`}>
-          <a className="block md:inline-block hover:text-gray-300 px-3 py-3 text-purple-600 font-medium"
-           style={{
-             fontFamily: 'Roboto, sans-serif'
-           }}
+          <a className="block md:inline-block hover:text-gray-300 px-3 py-3 text-[#1B4332] font-medium"
+       
           >
           <NavLink
                 exact
@@ -63,24 +57,39 @@ const NavigationBar = () => {
           </a>
       
 
-          <a  className="block md:inline-block hover:text-gray-300 px-3 py-3 text-purple-600 font-medium"
-          style={{
-            fontFamily: 'Roboto, sans-serif'
-          }}
+          <a  className="block md:inline-block hover:text-gray-300 px-3 py-3 text-[#1B4332] font-medium"
+       
           >
           <NavLink
                 exact
-                to="/"
+                to="/contact"
               >
                 Contact Us
               </NavLink>
           
           
           </a>
-          <a href="#gallery" className="block md:inline-block hover:text-gray-300 px-3 py-3 text-purple-600 font-medium"
-          style={{
-            fontFamily: 'Roboto, sans-serif'
-          }}
+
+
+          <a  className="block md:inline-block hover:text-gray-300 px-3 py-3 text-[#1B4332] font-medium"
+       
+          >
+          <NavLink
+                exact
+                to="/gallery"
+              >
+                Gallery
+              </NavLink>
+          
+          
+          </a>
+
+
+
+
+
+          <a href="#gallery" className="block md:inline-block hover:text-gray-300 px-3 py-3 text-[#1B4332] font-medium"
+        
           >About us </a>
         </div>
 
@@ -92,7 +101,7 @@ const NavigationBar = () => {
     href="https://facebook.com"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-purple-600 hover:bg-purple-100 transition"
+    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-[#1B4332] hover:bg-purple-100 transition"
     aria-label="Visit our Facebook page"
   >
     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +112,7 @@ const NavigationBar = () => {
     href="https://linkedin.com"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-purple-600 hover:bg-purple-100 transition"
+    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-[#1B4332] hover:bg-purple-100 transition"
     aria-label="Visit our LinkedIn page"
   >
     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +123,7 @@ const NavigationBar = () => {
     href="https://x.com"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-purple-600 hover:bg-purple-100 transition"
+    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-[#1B4332] hover:bg-purple-100 transition"
     aria-label="Visit our X page"
   >
     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +134,7 @@ const NavigationBar = () => {
     href="https://instagram.com"
     target="_blank"
     rel="noopener noreferrer"
-    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-purple-600 hover:bg-purple-100 transition"
+    className="flex items-center justify-center w-10 h-10 rounded-full bg-white text-[#1B4332] hover:bg-purple-100 transition"
     aria-label="Visit our Instagram page"
   >
     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

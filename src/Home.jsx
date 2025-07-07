@@ -1,6 +1,7 @@
 import NavigationBar from "./Navigationbar";
 import Carousel from "./Carosel";
 import Aboutus from "./Aboutus";
+import Footer from "./footer";
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Carousel />
       <Aboutus />
+      <Footer />
     </div>
   );
 };

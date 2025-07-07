@@ -5,19 +5,19 @@ import React from 'react';
 const Banner = () => {
 
   return (
-    <div className="bg-white text-purple-600 py-6 shadow-md border-t border-b border-gray-300">
+    <div className="bg-white text-[#1B4332] py-6 shadow-md border-t border-b border-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
         {/* Logo Placeholder */}
-        {/* <div className="flex-shrink-0">
+        {/* /* <div className="flex-shrink-0">
           <div className="w-32 h-16 bg-gray-200 flex items-center justify-center rounded-md">
             <img src={logo} alt="Logo" className="w-full h-full object-contain" />
           </div>
-        </div> */}
+        </div> */ }
 
         {/* Phone Numbers with Icon */}
         <div className="flex items-center gap-3">
           <svg
-            className="w-8 h-8 text-purple-600"
+            className="w-8 h-8 text-[#1B4332]"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ const Banner = () => {
           </svg>
           <div className="flex flex-col">
             <a href="tel:+1234567890" className="text-lg font-medium hover:underline">
-              0718060754
+              0718060754 
             </a>
             <a href="tel:+0987654321" className="text-lg font-medium hover:underline">
               0700699101
@@ -41,7 +41,7 @@ const Banner = () => {
         </div>
 
         {/* Apply Now Button */}
-        <button className="bg-purple-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-purple-700 transition">
+        <button className="bg-[#1B4332] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-purple-700 transition">
           Talk to us
         </button>
       </div>

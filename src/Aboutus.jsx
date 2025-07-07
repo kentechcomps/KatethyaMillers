@@ -6,13 +6,13 @@ const Aboutus = () => {
 
   return (
     <section className="px-4 py-16 bg-gray-50">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center ">
         {/* Image */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="w-full"
+          className="w-full bg-[#FFBA08]"
         >
           <img
             src={pic7}
