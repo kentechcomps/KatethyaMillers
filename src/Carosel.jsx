@@ -3,96 +3,118 @@ import pic1 from './assets/pic1.webp';
 import pic2 from './assets/pic2.webp';
 import pic3 from './assets/pic3.webp';
 import pic4 from './assets/pic4.webp';
-import pic5 from './assets/pic5.webp'
+import pic5 from './assets/pic5.webp';
 
+import { motion } from "framer-motion";
+import { Leaf, ShoppingCart, Users } from "lucide-react";
 
 
 const Carousel = () => {
- const images = [pic5, pic2, pic1, pic4];
- const [currentIndex, setCurrentIndex] = useState(0);
+//  const images = [pic5, pic2, pic1, pic4];
+//  const [currentIndex, setCurrentIndex] = useState(0);
 
-   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [images.length]);
+//    useEffect(() => {
+//     const interval = setInterval(() => {
+//       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+//     }, 5000);
+//     return () => clearInterval(interval);
+//   }, [images.length]);
 
-    const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
+//     const goToPrevious = () => {
+//     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+//   };
 
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+//   const goToNext = () => {
+//     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+//   };
 
 
 
   return (
-     <div className="relative w-full  h-[600px] mx-auto my-6 overflow-hidden rounded-lg shadow-lg">
-      {/* Image Wrapper */}
-      <div className="h-full">
-        <div
-          className="flex transition-transform duration-500 ease-in-out h-full"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+    //  <div className="relative w-full  h-[600px] mx-auto my-6 overflow-hidden rounded-lg shadow-lg">
+    //   {/* Image Wrapper */}
+    //   <div className="h-full">
+    //     <div
+    //       className="flex transition-transform duration-500 ease-in-out h-full"
+    //       style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+    //     >
+    //       {images.map((src, index) => (
+    //         <img
+    //           key={index}
+    //           src={src}
+    //           alt={`Slide ${index + 1}`}
+    //           className="w-full flex-shrink-0 h-full object-cover"
+    //         />
+    //       ))}
+    //     </div>
+    //   </div>
+
+    //   {/* Prev Button */}
+    //   <button
+    //     onClick={goToPrevious}
+    //     className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-purple-600 p-2 rounded-full shadow-md hover:bg-purple-100 transition z-10"
+    //     aria-label="Previous slide"
+    //   >
+    //     <svg
+    //       className="w-6 h-6"
+    //       fill="none"
+    //       stroke="currentColor"
+    //       viewBox="0 0 24 24"
+    //     >
+    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+    //     </svg>
+    //   </button>
+
+    //   {/* Next Button */}
+    //   <button
+    //     onClick={goToNext}
+    //     className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-purple-600 p-2 rounded-full shadow-md hover:bg-purple-100 transition z-10"
+    //     aria-label="Next slide"
+    //   >
+    //     <svg
+    //       className="w-6 h-6"
+    //       fill="none"
+    //       stroke="currentColor"
+    //       viewBox="0 0 24 24"
+    //     >
+    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+    //     </svg>
+    //   </button>
+
+    //   {/* Indicators (inside carousel) */}
+    //   <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+    //     {images.map((_, index) => (
+    //       <button
+    //         key={index}
+    //         onClick={() => setCurrentIndex(index)}
+    //         className={`w-3 h-3 rounded-full ${
+    //           currentIndex === index ? 'bg-purple-600' : 'bg-gray-300'
+    //         } hover:bg-purple-400 transition`}
+    //         aria-label={`Go to slide ${index + 1}`}
+    //       />
+    //     ))}
+    //   </div>
+    // </div>
+   <section className="relative flex flex-col items-center justify-center text-center h-screen bg-gradient-to-r from-green-100 via-white to-yellow-50">
+        <motion.h2 
+          className="text-4xl md:text-6xl font-extrabold text-green-700"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
         >
-          {images.map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Slide ${index + 1}`}
-              className="w-full flex-shrink-0 h-full object-cover"
-            />
-          ))}
+          Growing Together with Farmers 🌱
+        </motion.h2>
+        <p className="mt-4 max-w-2xl text-gray-700 text-lg md:text-xl">
+          Supplying quality cereals, offering seed credit, and producing premium unga for every household.
+        </p>
+        <div className="mt-6 flex gap-4">
+          <button className="bg-green-600 text-white px-6 py-3 rounded-xl hover:bg-green-700">
+            Explore Products
+          </button>
+          <button className="border border-green-600 text-green-600 px-6 py-3 rounded-xl hover:bg-green-50">
+            Learn More
+          </button>
         </div>
-      </div>
-
-      {/* Prev Button */}
-      <button
-        onClick={goToPrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white text-purple-600 p-2 rounded-full shadow-md hover:bg-purple-100 transition z-10"
-        aria-label="Previous slide"
-      >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      {/* Next Button */}
-      <button
-        onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white text-purple-600 p-2 rounded-full shadow-md hover:bg-purple-100 transition z-10"
-        aria-label="Next slide"
-      >
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-
-      {/* Indicators (inside carousel) */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? 'bg-purple-600' : 'bg-gray-300'
-            } hover:bg-purple-400 transition`}
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
-      </div>
-    </div>
+      </section>
   );
 };
 

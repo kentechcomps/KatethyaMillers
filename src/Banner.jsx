@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 
 
 const Banner = () => {
+  const history = useNavigate()
+
+  const handleclick = () =>{
+  history("contact")
+  }
 
   return (
     <div className="bg-white text-[#1B4332] py-6 shadow-md border-t border-b border-gray-300">
@@ -41,7 +47,9 @@ const Banner = () => {
         </div>
 
         {/* Apply Now Button */}
-        <button className="bg-[#1B4332] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-purple-700 transition">
+        <button className="bg-[#1B4332] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-purple-700 transition"
+        onClick={handleclick}
+        >
           Talk to us
         </button>
       </div>
