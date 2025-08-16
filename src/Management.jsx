@@ -32,11 +32,12 @@ const Management = () => {
             {/* Manager 2 */}
             <div className="bg-gradient-to-tr from-yellow-100 via-white to-green-100 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <img 
-                src={KALWEE} 
+                src={regina} 
+              
                 alt="Operations Manager" 
                 className="w-32 h-32 mx-auto rounded-full object-cover shadow-md border-4 border-white"
               />
-              <h4 className="mt-4 text-xl font-bold text-gray-900">John Smith</h4>
+              <h4 className="mt-4 text-xl font-bold text-gray-900">Regina</h4>
               <p className="text-green-700 font-medium">Operations Manager</p>
               <p className="mt-2 text-gray-700 text-sm">
                 Oversees production and supply chain processes to ensure top-quality cereals and unga products.
@@ -46,11 +47,11 @@ const Management = () => {
             {/* Manager 3 */}
             <div className="bg-gradient-to-tr from-green-200 via-white to-yellow-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <img 
-                src={regina} 
+                src={KALWEE} 
                 alt="Finance Manager" 
                 className="w-32 h-32 mx-auto rounded-full object-cover shadow-md border-4 border-white"
               />
-              <h4 className="mt-4 text-xl font-bold text-gray-900">Mary Wanjiku</h4>
+              <h4 className="mt-4 text-xl font-bold text-gray-900">Abdul Kalwe</h4>
               <p className="text-green-700 font-medium">Finance Manager</p>
               <p className="mt-2 text-gray-700 text-sm">
                 Ensures sustainable growth by managing seed credit programs and supporting farmer financing.
