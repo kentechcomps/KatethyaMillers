@@ -22,7 +22,7 @@ const Management = () => {
                 alt="CEO" 
                 className="w-32 h-32 mx-auto rounded-full object-cover shadow-md border-4 border-white"
               />
-              <h4 className="mt-4 text-xl font-bold text-gray-900">Jane Doe</h4>
+              <h4 className="mt-4 text-xl font-bold text-gray-900">Nicholus Katua</h4>
               <p className="text-green-700 font-medium">Chief Executive Officer</p>
               <p className="mt-2 text-gray-700 text-sm">
                 Passionate about agricultural transformation and empowering farmers through innovation and sustainability.
