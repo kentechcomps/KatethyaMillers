@@ -7,6 +7,7 @@ import Banner from './Banner';
 const NavigationBar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
+ 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -23,7 +24,7 @@ const NavigationBar = () => {
         className="flex flex-wrap items-center justify-between p-3 "
         style={{ backgroundColor: 'white' }}
       >
-        <div className="text-xl text-[#1B4332] font-medium"
+        <div className="text-xl text-green-600 font-medium"
       
         >KATETHYA MILLERS</div>
 
@@ -49,7 +50,7 @@ const NavigationBar = () => {
 
         {/* Links */}
         <div className={`toggle w-full md:w-auto md:flex text-right text-bold ${isOpen ? 'block' : 'hidden'} md:block`}>
-          <a className="block md:inline-block hover:text-gray-300 px-3 py-3 text-[#1B4332] font-medium"
+          <a className="block md:inline-block hover:text-gray-300 px-3 py-3 text-green-600 font-medium"
        
           >
           <NavLink
@@ -61,7 +62,7 @@ const NavigationBar = () => {
           </a>
       
 
-          <a  className="block md:inline-block hover:text-gray-300 px-3 py-3 text-[#1B4332] font-medium"
+          <a  className="block md:inline-block hover:text-gray-300 px-3 py-3 text-green-600 font-medium"
        
           >
           <NavLink
@@ -75,7 +76,7 @@ const NavigationBar = () => {
           </a>
 
 
-          <a  className="block md:inline-block hover:text-gray-300 px-3 py-3 text-[#1B4332] font-medium"
+          <a  className="block md:inline-block hover:text-gray-300 px-3 py-3 text-green-600 font-medium"
        
           >
           <NavLink
@@ -92,7 +93,7 @@ const NavigationBar = () => {
 
 
 
-          <a href="#gallery" className="block md:inline-block hover:text-gray-300 px-3 py-3 text-[#1B4332] font-medium"
+          <a href="#gallery" className="block md:inline-block hover:text-gray-300 px-3 py-3 text-green-600 font-medium"
         
           >About us </a>
         </div>

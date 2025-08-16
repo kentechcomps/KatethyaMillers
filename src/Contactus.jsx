@@ -114,7 +114,7 @@ const Contactus = ()=>{
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Phone</h3>
-                <p className="text-gray-600 dark:text-slate-300">+254 712 345 678</p>
+                <p className="text-gray-600 dark:text-slate-300">0718060754</p>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ const Contactus = ()=>{
               </div>
               <div className="ml-4">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Email</h3>
-                <p className="text-gray-600 dark:text-slate-300">info@stpetersacademy.ac.ke</p>
+                <p className="text-gray-600 dark:text-slate-300">nicholaskatua23@gmail.com</p>
               </div>
             </div>
   

@@ -1,15 +1,20 @@
-import React from 'react';
+import {useState}from 'react';
 import { useNavigate } from 'react-router';
 
 
 
 const Banner = () => {
   const history = useNavigate()
+  const [loading , setloading] = useState(false)
 
-  const handleclick = () =>{
-  history("contact")
-  }
 
+  const handleClick = () => {
+    setloading(true);
+    setTimeout(() => {
+      setloading(false);
+      history("contact");
+    }, 2000); // simulate loading (2s)
+  };
   return (
     <div className="bg-white text-[#1B4332] py-6 shadow-md border-t border-b border-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -37,20 +42,46 @@ const Banner = () => {
             />
           </svg>
           <div className="flex flex-col">
-            <a href="tel:+1234567890" className="text-lg font-medium hover:underline">
-              0718060754 
+            <a href="tel:+1234567890" className="text-lg-green-600 font-medium hover:underline">
+              0718060754
             </a>
-            <a href="tel:+0987654321" className="text-lg font-medium hover:underline">
+            <a href="tel:+0987654321" className="text-lg-green-600 font-medium hover:underline">
               0700699101
             </a>
           </div>
         </div>
 
         {/* Apply Now Button */}
-        <button className="bg-[#1B4332] text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-purple-700 transition"
-        onClick={handleclick}
+        <button className="bg-green-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-700 transition"
+        onClick={handleClick}
         >
-          Talk to us
+        {loading ? (
+            <>
+              <svg
+                className="animate-spin h-5 w-5 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                ></path>
+              </svg>
+              Loading...
+            </>
+          ) : (
+            "Talk to us"
+          )}
         </button>
       </div>
     </div>
